@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Página do Usuário</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ✅ Adicionando Bootstrap 5 via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    form {
+      text-align: center;
+      justify-content: center;
+    }
+  
+    form-avaliacao{
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    button {
+      margin: 10px;
+      font-size: 120%;
+      width: 40%;
+      text-align: center;
+    }
+  li{
+    text-align: left;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="p_inicial.html">🏠 Inicio</a>
+      <a href="p_sobre.html">ℹ️ Saiba mais</a>
+      <a href="p_login.html">Sair ↪️ </a>
+    </nav>
+    
+    <h1 style="text-align: left; color: orange;">Bem-vindo, Usuário!</h1>
+  </header>
+  
+  <main>
+    <section id="apresentacao2">
+      <h2>Meu curso</h2>
+      <p>📘 Aqui você pode acessar os módulos.</p>
+      <br>
+      <ul>
+        <li><a href="p_modulo1.html">Módulo 1: Hardware e Software</a></li>
+        <li><a href="p_modulo2.html">Módulo 2: Sistema Operacional Windows 10</a></li>
+        <li><a href="p_modulo3.html">Módulo 3: Pacote Office</a></li>
+        <li><a href="p_modulo4.html">Módulo 4: Fundamentos e uso da internet</a></li>
+      </ul>
+      <br>
+      <p>📝 Aqui você pode acessar as atividades.</p>
+      <br>
+      <ul>
+        <li><a href="p_atv1.html">Atividades do módulo 1: Hardware e Software</a></li>
+        <li><a href="p_atv2.html">Atividades do módulo 2: Sistema Operacional Windows 10</a></li>
+        <li><a href="p_atv3.html">Atividades do módulo 3: Pacote Office</a></li>
+        <li><a href="p_atv4.html">Atividades do módulo 4: Fundamentos e uso da internet</a></li>
+      </ul>
+    </section>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 20px;">
+      <button onclick="location.href='p_aprender.info.html'">Continuar Aprendizado</button>
+      <button onclick="location.href='p_sobre.html'">Saiba mais</button>
+    </div>
+    
+    <section id="avaliacao-feedback">
+      <h2>Avaliação de Feedback</h2>
+      <p style="text-align: center;">Aqui você pode dar a sua avaliação sobre o curso e o que podemos melhorar! 🌷</p>
+      <form id="form-avaliacao" style="text-align: center;">
+        <label for="nota">Nota:</label>
+        <select id="nota" name="nota">
+          <option value="1">Ruim</option>
+          <option value="2">Regular</option>
+          <option value="3">Bom</option>
+          <option value="4">Ótimo</option>
+          <option value="5">Excelente</option>
+        </select><br><br>
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback"></textarea><br><br>
+        <button type="submit" style="justify-content: center; margin: 0 auto;">Enviar Avaliação</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Conectando Gerações. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Ana_helô & Nat.</p>
+  </footer>
+</body>
+</html>

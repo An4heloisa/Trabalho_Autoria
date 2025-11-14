@@ -8,7 +8,7 @@ formLogin.addEventListener('submit', (e) => {
 
   // Simula a autenticação do usuário
   if (username === 'usuario' && password === 'senha') {
-    window.location.href = 'pagina-usuario.html';
+    window.location.href = 'p_usuario.html';
   } else {
     alert('Usuário ou senha inválidos');
   }
